@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header><h1>SIMULADOR DE PRESTAMOS</h1></header>
+<body>
+<main>
+    <div class="formulario" id="formulario">
+    <form id= "formu" action=" " class="form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" placeholder="Nombre">       
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido"placeholder="Apellido">
+            <label for="email">Email: </label>
+            <input type="email" name="email" placeholder="Email">
+            <label for="importe">Importe a simular: </label>
+            <input  id="importe" type="number"name="importe" placeholder="importe">
+            <label for="cuotas">Seleccione la cantidad de cuotas</label>
+                <select name="cuotas"id="cuotas">
+                    <option value="6">6 cuotas</option>
+                    <option value="12">12 cuotas</option>
+                    <option value="24">24 cuotas</option>
+                    <option value="36">36 cuotas</option>
+                </select>
+            <label for="vencimiento">Seleccione la cantidad de cuotas</label>
+                <select name="vencimiento" id="vencimiento">
+                    <option value="30">Vencimiento en 30 días</option>
+                    <option value="60">Vencimiento en 60 días</option>
+                </select>
+            <input type="submit" value="Ver cuota">
+            <input type="reset" value="Borrar formulario">
+
+    </form>
+</div>
+</main>        
+<!-- <script src="./funcion.js"></script>
+<script src="./main.js"></script> 
+<script src="./app.js"></script> 
+ -->
+ <script src="./prueba.js"></script>
+<script src="js/libreria.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>

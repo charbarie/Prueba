@@ -1,0 +1,39 @@
+body{
+    background-image: url(./img/fondo.jpg);
+}
+.header{
+    align-items: center;
+    text-align: center; 
+}
+h1{
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.formulario{
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 30px;
+    padding-inline-start: 10px;
+    border-radius:20px ;
+    -webkit-border-radius:20px ;
+    -moz-border-radius:20px ;
+    -ms-border-radius:20px;
+    -o-border-radius:20px;
+    -o-border-radius:20px;
+    .form{
+        color: black;
+        background-color: rgb(126, 180, 224); 
+        display: flex;
+        flex-direction: column;
+        text-align: center; 
+        padding: 2%;
+        margin: 50px;
+        margin-left: 50px;
+        column-gap: 10px;
+        font-size: 30px;
+       
+        }
+}
