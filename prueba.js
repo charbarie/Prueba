@@ -12,18 +12,25 @@ function validarFormulario(e) {
     if (isNaN(importe) || isNaN(cuotas) || isNaN(vencimiento)) {
         mostrarMensaje("Ingrese valores válidos para calcular");
     } else {
+        
         const verCuota = calcularVerCuota(importe, cuotas, vencimiento);
+        console.log("fuera de la funcion es " + verCuota)
         guardarEnLocalStorage(verCuota);
+        
         mostrarMensaje(`El valor de la cuota es ${verCuota}`);
     }
 }
 
 function calcularVerCuota(a, b, c) {
-    return (c === 30) ? (a + obtenerInteres()) / b : (a + obtenerInteres()) / b * 2;
+    console.log("dentro de la funcion es a " + a + "b " +" " + b + " c " + c)
+    const valor =(c === 30) ? (a + obtenerInteres()) / b : (a + obtenerInteres()) / b * 2;
+    console.log("dentro de la funcion es " + valor);
+    return valor;
+
 }
 
 function obtenerInteres() {
-    return fetch('https://my.api.mockaroo.com/users.json')
+    return fetch('./datosInteres.json')
         .then(response => response.json())
         .then(data => data.interes)
         .catch(error => {
